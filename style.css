@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #181818;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 2rem !important;
+  color: #00CE79;
+  padding: 3rem 0;
+}
+
+body .container {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .container .gameItems {
+  position: absolute;
+  gap: 1rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .container .gameItems .plHealth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 100%;
+  border: 3px solid #00CE79;
+  border-radius: 10px;
+}
+
+body .container .gameItems .plHealth .plBar {
+  background-color: #181818;
+  height: 90%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+body .container .gameItems .timer {
+  background-color: #181818;
+  color: #00CE79;
+  font-size: 1.5rem !important;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .gameItems .enHealth {
+  height: 30px;
+  width: 100%;
+  border: 3px solid #00CE79;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 10px;
+}
+
+body .container .gameItems .enHealth .enBar {
+  background-color: #181818;
+  height: 90%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+body .container .popup {
+  position: absolute;
+  color: #00CE79;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  display: none;
+  background-color: #1818185c;
+}
+
+body .container .popup .reload {
+  border: none;
+  background-color: #00CE79;
+  color: #181818;
+  padding: 1rem .5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-family: 'Press Start 2P', cursive;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negm Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Negm's Game</h1>
+
+    <div class="container">
+        <div class="gameItems">
+            <!-- player health -->
+            <div class="plHealth">
+                <div id="playerHealth" class="plBar">
+                </div>
+            </div> <!-- timer -->
+            <div id="timer" class="timer">10</div>
+            <!-- enemy health -->
+            <div class="enHealth">
+                <div id="enemyHealth" class="enBar">
+                </div>
+            </div>
+        </div>
+        <div id="displayText" class="popup">
+            <p id="text"></p>
+
+            <button class="reload" onClick="window.location.reload();">
+                Play again?
+            </button>
+
+        </div>
+        <canvas></canvas>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="js/sandbox.js"></script>
+</body>
+
+</html>
