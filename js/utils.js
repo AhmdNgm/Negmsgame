@@ -12,12 +12,12 @@ function determineWinner({ player, enemy, timerId }) {
     clearTimeout(timerId)
     document.querySelector('#displayText').style.display = 'flex'
     if (player.health === enemy.health) {
-        document.querySelector('#text').innerHTML = 'both win'
+        document.querySelector('#text').innerHTML = 'مفيش حد كسب يسطا'
 
     } else if (player.health > enemy.health) {
-        document.querySelector('#text').innerHTML = 'player 1 wins'
+        document.querySelector('#text').innerHTML = 'اللي علي الشمال كسب عاش'
     } else if (player.health < enemy.health) {
-        document.querySelector('#text').innerHTML = 'player 2 wins'
+        document.querySelector('#text').innerHTML = 'اللي علي اليمين كسب عاش'
 
     }
 }
