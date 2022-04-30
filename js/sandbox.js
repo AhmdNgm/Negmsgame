@@ -12,25 +12,25 @@ const background = new Sprite({
         x: 0,
         y: 0
     },
-    imageSrc: './img/background.png'
+    imageSrc: './img/background2.png'
 })
 
-const shop = new Sprite({
-    position: {
-        x: 620,
-        y: 127
-    },
-    imageSrc: './img/shop.png',
-    scale: 2.75,
-    frameMax: 6
+// const shop = new Sprite({
+//     position: {
+//         x: 690,
+//         y: 395
+//     },
+//     imageSrc: './img/TX Chest Animation.png',
+//     scale: 1,
+//     frameMax: 28
 
-})
+// })
 
 
 
 const player = new Fighter({
     position: {
-        x: 0,
+        x: 200,
         y: 0
     },
     velocity: {
@@ -46,7 +46,7 @@ const player = new Fighter({
     scale: 2.5,
     offset: {
         x: 215,
-        y: 155
+        y: 115
     },
     sprites: {
         idle: {
@@ -93,7 +93,7 @@ const player = new Fighter({
 
 const enemy = new Fighter({
     position: {
-        x: 400,
+        x: 800,
         y: 100
     },
     velocity: {
@@ -110,7 +110,7 @@ const enemy = new Fighter({
     scale: 2.5,
     offset: {
         x: 215,
-        y: 170
+        y: 130
     },
     sprites: {
         idle: {
@@ -184,7 +184,7 @@ function animate() {
     c.fillStyle = 'black'
     c.fillRect(0, 0, canvas.width, canvas.height)
     background.update()
-    shop.update()
+    // shop.update()
     player.update()
     enemy.update()
     player.velocity.x = 0
