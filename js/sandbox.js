@@ -27,7 +27,7 @@ const background = new Sprite({
 // })
 
 
-
+// player
 const player = new Fighter({
     position: {
         x: 200,
